@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-Ng">
+
+<head>
+<script>
+document.createElement("quiz");
+</script>
+<title>Learn to Think-Data Structure</title>
+<meta charset="UTF-8" />
+<meta name="author" content="Umar BK" />
+<meta name="description" content="Learn to think-Data Stucture" />
+<meta name="keywords" content="HTML,CSS,JavaScript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+body {background-color:lightblue; text-align:center;}
+#body {background:white; border-radius:11px;}
+h5 {margin:0cm 0px; text-align:left;
+   color:rgba(0, 0, 0, 0.3); font-size:11px;}
+.h1{margin:0%;color:rgb(0, 99, 71);
+   font-family:fantasy; display:block; border-style:hidden;}
+sup{font-size:15px; font-family:serif;
+    color:orange; background:white;}
+#hink{font-size:15px;}
+#nav{display:inline; font-family:serif;
+    text-decoration:underline;
+    padding:2%; margin:0px; font-size:17px;
+    color:white; background:lightblue; border-radius:9px;}
+#false {display:inline; font-family:serif;
+    text-decoration:underline;
+    padding:2%; margin:0px; font-size:17px;
+    color:white; background:lightblue; border-radius:9px;}
+#true  {display:none; font-family:serif;
+    text-decoration:underline;
+    padding:2%; margin:0px; font-size:17px;
+    color:white; background:lightblue; border-radius:9px;}
+a:active {color:red;}
+h1, article {color:navy; font-family:serif;}
+#inst {list-style-type:square;  color:navy;
+    font-family:monospace;}
+h4, #powered{color:orange;}
+footer{background:rgb(0, 0, 25); color:rgba(255, 255, 255, 0.5);
+       margin-top:11%; height:131px; font-family:fantasy;}
+img{width:58px; height:58px; float:right; display:block;}
+ul {list-style-type:lower-alpha; text-align:left;
+     margin-top:0px; color:orange; }
+quiz, section{margin:0px; padding:0px; 
+              font-family:fantasy; color:rgb(0, 122, 255);}
+a:link {text-decoration:none;}
+a:hover, a:active, a:visited {text-decoration:none;
+         background-color:red;}
+ul, li, quiz {border-radius:5px; border:inset lime;}
+a.answer:hover {background-color:green; color:blue;}
+#my, #div2, #div3, #div4, #div5, #divZ {display:none;}
+#divZ{background:green; color:white;
+      font-family:serif; font-size:17px;}
+mark {font-size:45px;}
+#algol {display:none;}
+#ab{background:white; color:black;}
+
+</style>
+
+</head>
+<body>
+
+<header>
+  <h5><b><i>User came at <em id="date" ></em></i></b></h5>
+</header>
+<!--Date-->
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+<!--Night mode and Day mode-->
+<script>
+function night(){
+  var pic;
+  
+    pic = 'night.jpeg'
+  
+  document.getElementById('myImage').src = pic;
+  document.getElementById('my').style.display = "block";
+  document.getElementById('myImage').style.display = "none";
+  document.getElementById('body').style.backgroundColor = "black"
+}
+</script>
+
+<script>
+function day(){
+  var pic;
+  
+    pic = 'day.jpeg'
+  
+  document.getElementById('myImage').src = pic;
+  document.getElementById('my').style.display = "none";
+  document.getElementById('myImage').style.display = "block";
+  document.getElementById('body').style.backgroundColor  = "white";
+}
+</script>
+<!--Quiz 1-->
+<script>
+function answer1(){
+  alert('Correct answer 👏 ✔ 3marks.');
+  
+  document.getElementById('div1').style.display = 'none';
+  document.getElementById('div2').style.display = 'block';
+
+}
+</script>
+<!--Quiz 2-->
+<script>
+function answer2(){
+  alert('Correct answer 👏 ✔ 3marks.');
+  
+  document.getElementById('div2').style.display = 'none';
+  document.getElementById('div3').style.display = 'block';
+}
+</script>
+<!--Quiz 3-->
+<script>
+function answer3(){
+  alert('Correct answer 👏 ✔ 3marks.');
+  
+  document.getElementById('div3').style.display = 'none';
+  document.getElementById('div4').style.display = 'block';
+}
+</script>
+<!--Quiz 4-->
+<script>
+function answer4(){
+  alert('Correct answer 👏 ✔ 3marks.');
+  
+  document.getElementById('div4').style.display = 'none';
+  document.getElementById('div5').style.display = 'block';
+}
+</script>
+<!--Quiz 5-->
+<script>
+function answer5(){
+  alert('Correct answer 👏 ✔ 3marks.');
+  
+  document.getElementById('div5').style.display = 'none';
+  document.getElementById('divZ').style.display = 'block';
+  document.getElementById('sect').style.display = 'none';
+  document.getElementById('algol').style.display = 'block';
+  document.getElementById('false').style.display = 'none';
+  document.getElementById('true').style.display = 'inline';
+}
+</script>
+<!--warning-->
+<script>
+function warning(){
+  alert('💁You can not go to the algorithm unless you finished data structure and it is quiz.')
+}
+</script>
+
+<div id="body">
+
+<a id="nav"  href="learnt.html" >🏣</a>
+
+<h1 class="h1" >L<sup>earn to
+</sup>T<sup id="hink">hink</sup> !!!</h1>
+<hr>
+<nav>
+<h3><a id="nav"  n>Data Structure</a>
+
+<a id="false" href=""  onclick="warning()">Algorithm</a>
+<a id="true" href="algorithm.html" >Algorithm</a>
+</h3>
+
+<img id="my" src="day.jpeg" onclick="day()">
+<img id="myImage" src="night.jpeg" onclick="night()">
+<hr>
+
+</nav>
+<br>
+<br>
+<article>
+<h1>Data Structure</h1>
+<p>What is Data Structure:
+A data structure is a storage that
+is used to store and organize
+data. It is a way of arranging
+data on a computer so that it
+can be accessed and updated
+efficiently.
+A data structure is not only used for
+organizing the data. It is also used for
+processing, retrieving, and storing data.
+There are different basic and advanced
+types of data structures that are used
+in almost every program or software
+system that has been developed. So we
+must have good knowledge about data
+structures.
+
+<h2>Classification of Data Structure:</h2>
+<h4>Linear data structure:</h4>
+<br>Datastructure in which data elements
+are arranged sequentially or
+linearly, where each element is
+attached to its previous and next
+adjacent elements, is called a
+linear data structure.
+Examples of linear data structures
+are array, stack, queue, linked list,
+etc.
+<h4>Static data structure:</h4><br> Static
+data structure has a fixed
+memory size. It is easier to
+access the elements in a
+static data structure.
+An example of this data
+structure is an array.
+<h4>Dynamic data structure:</h4><br> In
+dynamic data structure, the
+size is not fixed. It can be
+randomly updated during
+the runtime which may be
+considered efficient
+concerning the memory
+(space) complexity of the
+code.
+Examples of this data
+structure are queue, stack,
+etc.
+<h4>Non-linear data structure:</h4><br> Data
+structures where data elements
+are not placed sequentially or
+linearly are called non-linear data
+structures. In a non-linear data
+structure, we can’t traverse all
+the elements in a single run
+only.
+<h4>Examples of non-linear data
+structures are trees and graphs.</h4><br>
+For example, we can store a list of
+items having the same data-type using
+the array data structure.
+Array Data Structure
+This page contains detailed tutorials on
+different data structures (DS) with
+topic-wise problems.</p>
+</article>
+
+<section id="sect" >
+Test your brain in Quiz,<br>
+Notice:
+You should answer Five question only in each tutorial.
+Each question have three marks only.
+</section>
+
+<div>
+
+<div id="div1" >
+<quiz>Q1. Data Structure is all about ?</quiz>
+<ul>
+<li><a href="#ul" >Demolish and atracking of data</a></li>
+<li><a href="#ul" >Hiding and showing of data</a></li>
+<li><a class="answer" href="#ul" onclick="answer1()" >Storing and organizing of data</a></li>
+<li><a href="#ul" >Creating and processing of data</a></li>
+<li><a href="#ul" >Linking and gathering of data</a></li>
+</ul>
+
+</div>
+
+<div id="div2" >
+<quiz>Q2.One of the classification of data structure is?</quiz>
+<ul>
+<li><a href="#ul" >Amounier data structure</a></li>
+<li><a href="#ul" >Retrieving data structure</a></li>
+<li><a href="#ul" onclick="answer2()" >Gathering data structure</a></li>
+<li><a href="#ul" >Linking data structure</a></li>
+<li><a class="answer" onclick="answer2()"  href="#ul" >
+Linear data structure</a></li>
+</ul>
+
+</div>
+
+<div id="div3" >
+<quiz>Q3.It is easier to access the element in a ?</quiz>
+<ul>
+<li><a class="answer" onclick="answer3()" href="#ul" >Static data structure</a></li>
+<li><a href="#ul" >Keeping data structure</a></li>
+<li><a href="#ul" onclick="answer3()" >Linear data structure</a></li>
+<li><a href="#ul" >Linking data structure</a></li>
+<li><a href="#ul" >Onliye data structure</a></li>
+</ul>
+
+</div>
+
+<div id="div4" >
+<quiz>Q4.Queue and stack are examples of ?</quiz>
+<ul>
+<li><a href="#ul" >Amounier data structure</a></li>
+<li><a href="#ul" >Linear data structure</a></li>
+<li><a href="#ul" >Gathering data</a></li>
+<li><a class="answer" onclick="answer4()" href="#ul" >Dynamic data structure</a></li>
+<li><a href="#ul" >Finite data structure</a></li>
+</ul>
+
+</div>
+
+<div id="div5" >
+<quiz>Q5.data elements are not placed sequentially or linearly are called ?</quiz>
+<ul>
+<li><a href="#ul" >Unregnize data structure</a></li>
+<li><a href="#ul" >Sequentially data structure</a></li>
+<li><a href="#ul" >Linearly data structure</a></li>
+<li><a class="answer" onclick="answer5()" href="#ul">Non-Linear data structure</a></li>
+<li><a href="#ul" >Canceling data structure</a></li>
+</ul>
+
+</div>
+
+<div id="divZ" >"We have considered that you 
+are very intelligent,
+You have finished the Quiz of Data Structure
+Tutorial.<mark>👏✅</mark>
+You have scored <mark>15</mark> marks.<br>
+With <mark>25</mark> points<mark>💰✔👏</mark>".
+</div>
+
+</div>
+
+<span id="algol" >
+<a id="nav" href="algorithm.html" >Go to Algorithm</a>
+</span>
+
+<footer>
+<p class="footer">
+Contact us:<br>
+<a href="mailto:umarbellokanwa@gmail.com/" >
+ Umarbellokanwa@gmail.com</a><br>
+Phone No.+2349065936704<br>
+Facebook:<a href="wwww.facebook.com/umarbk.7967/" >Umar Bello Kanwa</a>
+<br>
+<a id="ab" href="https://kanwa-family.w3spaces.com/5.html" >About me</a>
+</p>
+</footer>
+
+</div>
+</body>
+</html>

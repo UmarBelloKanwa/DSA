@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+
+<head>
+<title>Learn to think</title>
+<base target="blank" />
+<meta charset="UTF-8" />
+<meta name="description" content="Learn to
+think through our site" />
+<meta name="keywords" content="HTML,CSS,JavaScript" />
+<meta name="author" content="Umar BK" />
+<meta name="viewport" content="width=
+device-width, initial-scale=1.0"/>
+
+<style>
+*{text-align:center; }
+body{background-color:lightblue;}
+div{background:white; border-radius:5%;}
+h5{margin:0cm 0px; text-align:left;
+   color:rgba(0, 0, 0, 0.3); font-size:11px;}
+#wel{text-align:center; color:white;
+    background-color:navy; border-radius:11px;
+    font-family:fantasy; font-size:15px; 
+    width:auto; border-style:hidden;}
+h1{margin:0%;color:rgb(0, 99, 71); background:white;}
+sup{font-size:15px; font-family:monospace;
+    color:orange; background:white;}
+#hink{font-size:15px;}
+mark, #lww {background:navy; color:lightblue;
+        text-decoration:underline; font-size:17px;}
+h6{font-size:14px; margin-top:2%;}
+h3{font-family:fantasy; color:lightblue; text-align:center;} 
+#learn, section {font-family:serif; color:navy;}
+span {background:navy; color:white; font-family:fantasy;
+      text-align:center; border-radius:5px; font-size:31px;}
+footer{background:rgb(0, 0, 25); color:rgba(255, 255, 255, 0.5);
+       margin-top:11%; height:131px; font-family:fantasy;}
+#powered, #when{color:orange;}
+.foo {text-decoration:none;}
+ul {list-style-type:square;  color:navy;
+    font-family:monospace;}
+h2, .red{color:red;}
+.gre{color:green;}
+img{width:58px; height:58px; float:right; display:block;}
+#my{display:none;}
+#ab {background:white; color:black;
+     text-decoration:none;}
+
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h5><b><i>User came at <em id="date" ></em></i></b></h5>
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+</header>
+
+<div id="body" >
+<div id="wel"><span>🏠</span><br>
+<h1>Welcome to<br> L<sup>earn to
+</sup>T<sup id="hink">hink</sup> !!!</h1>
+<br><br>
+<mark><a id="lww" href="#Span" >Learn to think ?</a></mark>
+
+<img id="my" src="day.jpeg" width="100" height="180" onclick="day()">
+<img id="myImage" src="night.jpeg" width="100" height="180" onclick="night()">
+<script>
+function night(){
+  var pic;
+  
+    pic = 'night.jpeg'
+  
+    pic = 'day.jpeg'
+    
+  
+  document.getElementById('myImage').src = pic;
+  document.getElementById('my').style.display = "block";
+  document.getElementById('myImage').style.display = "none";
+  document.getElementById('body').style.backgroundColor = "black";
+}
+</script>
+
+<script>
+function day(){
+  var pic;
+  
+    pic = 'day.jpeg'
+  
+    pic = 'night.jpeg'
+   
+  document.getElementById('myImage').src = pic;
+  document.getElementById('my').style.display = "none";
+  document.getElementById('myImage').style.display = "block";
+  document.getElementById('body').style.backgroundColor  = "white";
+  }
+</script>
+
+<br><mark><a id="lww"  href="#Span" >
+Where to think ?</a>
+<br><a id="lww"  href="#Span" >
+How to think ?</a></mark>
+<br><br>
+
+<h6 title="decscription" >With our free digital platform' s Tutorials.</h6></div>
+
+<article>
+<div id="learn" ><h3>Learn Data Structures and Algorithms</h3>
+<hr>
+Learning data structures and algorithms
+allow us to write efficient and optimized computer
+programs.<br>Learn, where and how to make an efficient think
+in computing, especially at Data Scientist.
+</div>
+</article>
+
+
+<section>
+<h3>Why you should study Data structure and Algorithms
+(DSA) ?</h3>
+<hr>
+Data structure and algorithms help in
+understanding the nature of the problem at
+a deeper level and thereby a better
+understanding of the world.
+</section>
+
+<h3>We provide Quiz for you to test your knowledge
+and understanding about each tutorial you discovered
+in each chapter.</h3><hr>
+<h2>Notice:</h2>
+
+<ins id="when">When you touch over answer of the quiz</ins>
+<ul>
+ <li>Appearing of green color means <q class="gre" >correct !!!</q></li>
+ <li>Appearing of red color means <q class="red" ><del>wrong !!!</del></q></li>
+</ul>
+
+<p>
+<span id="Span"  onclick="document.location='datastr.html'"><b>Get start</b></span>
+</p>
+
+<footer>
+<p class="footer">
+Contact us:<br>
+<a class="foo" href="mailto:umarbellokanwa@gmail.com/" >
+ Umarbellokanwa@gmail.com</a><br>
+Phone No.+2349065936704<br>
+Facebook:<a class="foo"  href="wwww.facebook.com/umarbk.7967/" >Umar Bello Kanwa</a>
+<br>
+<a id="ab" href="https://kanwa-family.w3spaces.com/5.html" >About me</a>
+</p>
+</footer>
+
+</div>
+
+</body>

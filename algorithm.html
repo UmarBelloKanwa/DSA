@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en-Ng">
+<head>
+<script>
+document.createElement("quiz");
+</script>
+<title>Learn to Think-Algorithm</title>
+<meta charset="UTF-8" />
+<meta name="author" content="Umar BK" />
+<meta name="description" content="Learn to think-Algorithm" />
+<meta name="keywords" content="HTML,CSS,JavaScript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+body {background-color:lightblue; text-align:center;}
+#body {background:white; border-radius:11px;}
+h5 {margin:0cm 0px; text-align:left;
+   color:rgba(0, 0, 0, 0.3); font-size:11px;}
+.h1{margin:0%;color:rgb(0, 99, 71);
+   font-family:fantasy; display:block; border-style:hidden;}
+sup{font-size:15px; font-family:serif;
+    color:orange; background:white;}
+#hink{font-size:15px;}
+#nav{display:inline; font-family:serif;
+    text-decoration:underline;
+    padding:2%; margin:0px; font-size:17px;
+    color:white; background:lightblue; border-radius:9px;}
+a:active {color:red;}
+h1, article {color:navy; font-family:serif;}
+#inst {list-style-type:square;  color:navy;
+    font-family:monospace;}
+h4, #powered{color:orange;}
+footer{background:rgb(0, 0, 25); color:rgba(255, 255, 255, 0.5);
+       margin-top:11%; height:131px; font-family:fantasy;}
+img{width:58px; height:58px; float:right; display:block;}
+ul {list-style-type:lower-alpha; text-align:left;
+     margin-top:0px; color:orange; }
+quiz, section{margin:0px; padding:0px; color:rgb(0, 122, 255);}
+a:link {text-decoration:none;}
+a:hover, a:active, a:visited {text-decoration:none;
+         background-color:red;}
+ul, li, quiz {border-radius:5px; border:inset lime;}
+a.answer:hover {background-color:green; color:blue;}
+#my, #div2, #div3, #div4, #div5, #divZ {display:none;}
+#divZ{background:green; color:white;
+      font-family:serif; font-size:17px;}
+mark {font-size:45px;}
+#algol {display:none;}
+#ab {background:white; color:black;}
+
+</style>
+
+</head>
+<body>
+
+<header>
+  <h5><b><i>User came at <em id="date" ></em></i></b></h5>
+</header>
+<!--Date-->
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+<!--Night mode and Day mode-->
+<script>
+function night(){
+  var pic;
+  
+    pic = 'night.jpeg'
+  
+    pic = 'day.jpeg'
+    
+  
+  document.getElementById('myImage').src = pic;
+  document.getElementById('my').style.display = "block";
+  document.getElementById('myImage').style.display = "none";
+  document.getElementById('body').style.backgroundColor = "black"
+}
+</script>
+
+<script>
+function day(){
+  var pic;
+  
+    pic = 'day.jpeg'
+  
+    pic = 'night.jpeg'
+    
+  
+  document.getElementById('myImage').src = pic;
+  document.getElementById('my').style.display = "none";
+  document.getElementById('myImage').style.display = "block";
+  document.getElementById('body').style.backgroundColor  = "white";
+}
+</script>
+<!--Quiz 1-->
+<script>
+function answer1(){
+  alert('Correct answer 👏 ✔ 3marks.');
+  
+  document.getElementById('div1').style.display = 'none';
+  document.getElementById('div2').style.display = 'block';
+
+}
+</script>
+<!--Quiz 2-->
+<script>
+function answer2(){
+  alert('Correct answer 👏 ✔ 3marks.');
+  
+  document.getElementById('div2').style.display = 'none';
+  document.getElementById('div3').style.display = 'block';
+}
+</script>
+<!--Quiz 3-->
+<script>
+function answer3(){
+  alert('Correct answer 👏 ✔ 3marks.');
+  
+  document.getElementById('div3').style.display = 'none';
+  document.getElementById('div4').style.display = 'block';
+}
+</script>
+<!--Quiz 4-->
+<script>
+function answer4(){
+  alert('Correct answer 👏 ✔ 3marks.');
+  
+  document.getElementById('div4').style.display = 'none';
+  document.getElementById('div5').style.display = 'block';
+}
+</script>
+<!--Quiz 5-->
+<script>
+function answer5(){
+  alert('Correct answer 👏 ✔ 3marks.');
+  
+  document.getElementById('div5').style.display = 'none';
+  document.getElementById('divZ').style.display = 'block';
+  document.getElementById('sect').style.display = 'none';
+  document.getElementById('algol').style.display = 'block';
+  document.getElementById('false').style.display = 'none';
+  document.getElementById('true').style.display = 'inline';
+}
+</script>
+
+<div id="body">
+
+<a id="nav"  href="learnt.html" >🏣</a>
+
+<h1 class="h1" >L<sup>earn to
+</sup>T<sup id="hink">hink</sup> !!!</h1>
+<hr>
+<nav>
+<h3><a id="nav"  href="datastr.html" >Data Structure</a>
+<a id="nav" >Algorithm</a>
+</h3>
+<img id="my" src="day.jpeg" onclick="day()">
+<img id="myImage" src="night.jpeg" onclick="night()">
+<hr>
+
+</nav>
+<br>
+
+<article>
+<br>
+<h1>
+What is an Algorithm?</h1>
+<h4>Algorithm Basics</h4>
+The word Algorithm means ” A set
+of finite rules or instructions to be
+followed in calculations or other
+problem-solving operations ” Or ”
+A procedure for solving a
+mathematical problem in a finite
+number of steps that frequently
+involves recursive operations”.
+Therefore Algorithm refers to a sequence
+of finite steps to solve a particular
+problem.
+Algorithms can be simple and complex
+depending on what you want to achieve.
+It can be understood by taking the
+example of cooking a new recipe. To
+cook a new recipe, one reads the
+instructions and steps and executes
+them one by one, in the given sequence.
+The result thus obtained is the new dish
+cooked perfectly. Every time you use
+your phone, computer, laptop, or
+calculator you are using Algorithms.
+Similarly, algorithms help to do a task in
+programming to get the expected output.
+The Algorithm designed are language-
+independent, i.e. they are just plain
+instructions that can be implemented in
+any language, and yet the output will be
+the same, as expected.
+<h2>What are the Characteristics
+of an Algorithm?</h2>
+As one would not follow any written
+instructions to cook the recipe, but only
+the standard one. Similarly, not all
+written instructions for programming is
+an algorithms. In order for some
+instructions to be an algorithm, it must
+have the following characteristics:<br>
+Clear and Unambiguous : The
+algorithm should be clear and
+unambiguous. Each of its steps
+should be clear in all aspects and
+must lead to only one meaning.<br>
+<h4>Well-Defined Inputs:</h4> If an algorithm
+says to take inputs, it should be well-
+defined inputs. It may or may not
+take input.<br>
+<h4>Well-Defined Outputs:</h4> The algorithm
+must clearly define what output will
+be yielded and it should be well-
+defined as well. It should take at
+least 1 output.<br>
+<h4>Finite-ness:</h4> The algorithm must be
+finite, i.e. it should terminate after a
+finite time.<br>
+<h4>Feasible:</h4> The algorithm must be
+simple, generic, and practical, such
+that it can be executed with the
+available resources. It must not
+contain some future technology or
+anything.<br>
+<h4>Language Independent:</h4> The
+Algorithm designed must be
+language-independent, i.e. it must be
+just plain instructions that can be
+implemented in any language, and
+yet the output will be the same, as
+expected.<br>
+<h2>Properties of Algorithm:</h2>
+It should terminate after a finite
+time.<br>
+It should produce at least one
+output.<br>
+It should take zero or more input.<br>
+It should be deterministic means
+giving the same output for the same
+input case.<br>
+Every step in the algorithm must be
+effective i.e. every step should do
+some work.<br>
+<h2>Types of Algorithms:</h2>
+There are several types of algorithms
+available. Some important algorithms are:<br>
+<h4>1. Brute Force Algorithm :</h4> It is the
+simplest approach for a problem. A brute
+force algorithm is the first approach that
+comes to finding when we see a
+problem.<br>
+<h4>2. Recursive Algorithm:</h4> A recursive
+algorithm is based on recursion . In this
+case, a problem is broken into several
+sub-parts and called the same function
+again and again.<br>
+<h4>3. Backtracking Algorithm :</h4> The
+backtracking algorithm basically builds
+the solution by searching among all
+possible solutions. Using this algorithm,
+we keep on building the solution
+following criteria. Whenever a solution
+fails we trace back to the failure point
+and build on the next solution and
+continue this process till we find the
+solution or all possible solutions are
+looked after.
+
+<section id="sect" >
+Test your brain in Quiz,<br>
+Notice:
+You should answer Five question only in each tutorial.
+Each question have three marks only.
+</section>
+
+<div>
+
+<div id="div1" >
+<quiz>Q1. Algorithm is all about ?</quiz>
+<ul>
+<li><a href="#ul" >Understandung of an object</a></li>
+<li><a class="answer" href="#ul" onclick="answer1()" >
+Procedure of solving problem</a></li>
+<li><a href="#ul" >Hiding and showing of object</a></li>
+<li><a href="#ul" >Creating and processing of fuction</a></li>
+<li><a href="#ul" >Linking and gathering of variables</a></li>
+</ul>
+
+</div>
+
+<div id="div2" >
+<quiz>Q2.One of the characteristics of Algorithm is?</quiz>
+<ul>
+<li><a href="#ul" >Hiking</a></li>
+<li><a href="#ul" >Retrieving</a></li>
+<li><a class="answer" onclick="answer2()"  href="#ul" >
+Feasiable</a></li>
+<li><a href="#ul" >Finitable</a></li>
+<li><a href="#ul" >Structureable</a></li>
+</ul>
+
+</div>
+
+<div id="div3" >
+<quiz>Q3.Properties of algorithm include ?</quiz>
+<ul>
+<li><a href="#ul" >It should take two or more input.</a></li>
+<li><a href="#ul" >It should take five or more input.</a></li>
+<li><a href="#ul" >It should take hero or more input.</a></li>
+<li><a href="#ul" >It should take four or more input.</a></li>
+<li><a class="answer" onclick="answer3()" href="#ul" >
+It should take zero or more input.</a></li>
+</ul>
+
+</div>
+
+<div id="div4" >
+<quiz>Q4.Types of Algorithm include ?</quiz>
+<ul>
+<li><a class="answer" onclick="answer4()" href="#ul" >
+Recursive Algorithm</a></li>
+<li><a href="#ul" >Force Algorithm</a></li>
+<li><a href="#ul" >Linear Algorithm</a></li>
+<li><a href="#ul" >Gathering Algorithm</a></li>
+<li><a href="#ul" >Finite data Algorithm</a></li>
+</ul>
+
+</div>
+
+<div id="div5" >
+<quiz>Q5.A recursive algorithm is based on  ?</quiz>
+<ul>
+<li><a href="#ul" >Data</a></li>
+<li><a href="#ul" >Structure</a></li>
+<li><a class="answer" onclick="answer5()" href="#ul">
+Recursion</a></li>
+<li><a href="#ul" >Data structure</a></li>
+<li><a href="#ul" >Recognizing</a></li>
+</ul>
+
+</div>
+
+<div id="divZ" >"We have considered that you 
+are very intelligent,
+You have finished the Quiz of an Algorithm
+Tutorial.<mark>👏✅</mark>
+You have scored <mark>15</mark> marks.<br>
+With <mark>25</mark> points<mark>💰✔👏</mark>".
+</div>
+
+</div>
+
+<span id="algol" >
+<a id="nav" href="learnt.html" >Home page</a>
+</span>
+
+<footer>
+<p class="footer">
+Contact us:<br>
+<a href="mailto:umarbellokanwa@gmail.com/" >
+ Umarbellokanwa@gmail.com</a><br>
+Phone No.+2349065936704<br>
+Facebook:<a href="wwww.facebook.com/umarbk.7967/" >Umar Bello Kanwa</a>
+<br>
+<a id="ab" href="https://kanwa-family.w3spaces.com/5.html" >About me</a>
+</p>
+</footer>
+</article>
+
+</div>
+</body>
+</html>
